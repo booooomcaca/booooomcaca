@@ -563,7 +563,7 @@ do
             if window.currentContent.dropdown and window.currentContent.dropdown.open then
                 local dropdown = window.currentContent.dropdown
                 dropdown.open = not dropdown.open
-                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "")
                 --
                 for i,v in pairs(dropdown.holder.drawings) do
                     utility:Remove(v)
