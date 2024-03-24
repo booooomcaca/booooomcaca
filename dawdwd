@@ -66,7 +66,7 @@ local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group
 local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
 
 local library = {
-   Title = 'boomcaca.kys | <font color="rgb(0, 201, 37)">v1.0</font>',
+   Title = 'boomcaca | <font color="rgb(0, 201, 37)">universal</font>',
    AnimatedText = true,
    keybind = Enum.KeyCode.End,
    Colors = {
@@ -116,7 +116,6 @@ local keynames = {
    [Enum.UserInputType.MouseButton2] = '[MB2]',
    [Enum.UserInputType.MouseButton3] = '[MB3]'
 }
-local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end)
 local ScreenGui = Instance.new('ScreenGui')
 ProtectGui(ScreenGui)
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
@@ -126,7 +125,7 @@ menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'boomcaca', 'boomcaca.', 'boomcaca.<font color="rgb(0, 201, 37)">w</font>',
+       'b', 'bo', 'boo', 'boom', 'boomc', 'boomca', 'boomcac', 'boomcaca.', 'boomcaca.<font color="rgb(0, 201, 37)">w</font>',
        'boomcaca.<font color="rgb(0, 201, 37)">wt</font>', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font>',
        'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> |', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | u',
        'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | un', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | uni',
@@ -138,7 +137,7 @@ task.spawn(function()
        'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | un', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | u',
        'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> |', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font>',
        'boomcaca.<font color="rgb(0, 201, 37)">wt</font>', 'boomcaca.<font color="rgb(0, 201, 37)">w</font>',
-       'boomcaca.', 'boomcaca', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
+       'boomcaca.', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b'
    }
    while wait(0.5) do
        if library.AnimatedText then
@@ -147,7 +146,7 @@ task.spawn(function()
                wait(0.5)
            end 
        else
-           menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(0, 201, 37)">v1.0</font>'
+           menu.bg.pre.Text = 'boomcaca | <font color="rgb(0, 201, 37)">universal</font>'
        end
    end
 end)  
