@@ -70,11 +70,11 @@ local library = {
    AnimatedText = false,
    keybind = Enum.KeyCode.End,
    Colors = {
-      libColor = Color3.fromRGB(189, 172, 255),
-      riskyColor = Color3.fromRGB(255, 0, 0),
+      libColor = Color3.fromRGB(0, 201, 37),
+      riskyColor = Color3.fromRGB(255, 89, 89),
       FontColor = Color3.fromRGB(255, 255, 255),
       MainColor = Color3.fromRGB(14, 14, 14),
-      AccentColor = Color3.fromRGB(189, 172, 255),
+      AccentColor = Color3.fromRGB(171, 255, 182),
       OutlineColor = Color3.fromRGB(15, 15, 15),
    },
    Enabled = true,
@@ -147,7 +147,7 @@ task.spawn(function()
                wait(0.5)
            end 
        else
-           menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(189, 172, 255)">fallen</font>'
+           menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(189, 172, 255)">v1.0</font>'
        end
    end
 end)  
