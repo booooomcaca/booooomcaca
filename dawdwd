@@ -126,7 +126,7 @@ menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       '','b','bo', 'boo', 'boom', 'boomc', 'boomca', 'boomcac', 'boomcaca', 'boomcaca.', 'boomcaca.<font color="rgb(62, 230, 107)">w</font>',
+       ' ','b','bo', 'boo', 'boom', 'boomc', 'boomca', 'boomcac', 'boomcaca', 'boomcaca.', 'boomcaca.<font color="rgb(62, 230, 107)">w</font>',
        'boomcaca.<font color="rgb(62, 230, 107)">wt</font>', 'boomcaca.<font color="rgb(62, 230, 107)">kys</font>',
        'boomcaca.<font color="rgb(62, 230, 107)">kys</font> |', 'boomcaca.<font color="rgb(62, 230, 107)">kys</font> | u',
        'boomcaca.<font color="rgb(62, 230, 107)">kys</font> | un', 'boomcaca.<font color="rgb(62, 230, 107)">kys</font> | uni',
@@ -138,13 +138,13 @@ task.spawn(function()
        'boomcaca.<font color="rgb(62, 230, 107)">kys</font> | un', 'boomcaca.<font color="rgb(62, 230, 107)">kys</font> | u',
        'boomcaca.<font color="rgb(62, 230, 107)">kys</font> |', 'boomcaca.<font color="rgb(62, 230, 107)">kys</font>',
        'boomcaca.<font color="rgb(62, 230, 107)">wt</font>', 'boomcaca.<font color="rgb(62, 230, 107)">w</font>',
-       'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b',''
+       'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b',' '
    }
-   while wait(0.1) do
+   while wait(0.05) do
        if library.AnimatedText then
            for i = 1, #textList do
                menu.bg.pre.Text = textList[i]
-               wait(0.1)
+               wait(0.05)
            end 
        else
            menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(62, 230, 107)">fallen</font>'
