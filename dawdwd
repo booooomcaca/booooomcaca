@@ -140,7 +140,7 @@ task.spawn(function()
        'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
        'eclipse.', 'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
    }
-   while wait(0.5) do
+   while wait(0.1) do
        if library.AnimatedText then
            for i = 1, #textList do
                menu.bg.pre.Text = textList[i]
