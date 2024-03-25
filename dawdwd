@@ -126,7 +126,7 @@ menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
+       'b','bo', 'boo', 'boom', 'boomc', 'boomca', 'boomcac', 'boomcaca', 'boomcaca.', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
        'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
        'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
        'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
@@ -138,16 +138,16 @@ task.spawn(function()
        'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
        'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
        'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
-       'eclipse.', 'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
+       'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b'
    }
    while wait(0.1) do
        if library.AnimatedText then
            for i = 1, #textList do
                menu.bg.pre.Text = textList[i]
-               wait(0.5)
+               wait(0.1)
            end 
        else
-           menu.bg.pre.Text = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>'
+           menu.bg.pre.Text = 'boomcaca.wtf | <font color="rgb(189, 172, 255)">fallen</font>'
        end
    end
 end)  
