@@ -219,7 +219,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
 
                      function library:Tween(...) TweenService:Create(...):Play() end
                         function library:addTab(name,image)
-                           local newTab = tabholder.tab:Clone()
+                           local neab = tabholder.tab:Clone()
                            local newButton = tabviewer.button:Clone()
 
                            table.insert(library.tabs,newTab)
