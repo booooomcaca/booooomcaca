@@ -67,7 +67,7 @@ local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
 
 local library = {
    Title = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>',
-   AnimatedText = false,
+   AnimatedText = true,
    keybind = Enum.KeyCode.End,
    Colors = {
       libColor = Color3.fromRGB(189, 172, 255),
