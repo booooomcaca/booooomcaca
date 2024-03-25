@@ -36,8 +36,8 @@ repeat
    task.wait()
 until game:IsLoaded()
 
-if not isfile("boomcaca.kys") then
-   makefolder("boomcaca.kys")
+if not isfile("eclipse.wtf") then
+   makefolder("eclipse.wtf")
 end
 
 ---// Variables
@@ -66,15 +66,15 @@ local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group
 local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
 
 local library = {
-   Title = 'boomcaca | <font color="rgb(0, 201, 37)">universal</font>',
-   AnimatedText = true,
+   Title = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>',
+   AnimatedText = false,
    keybind = Enum.KeyCode.End,
    Colors = {
-      libColor = Color3.fromRGB(0, 201, 37),
-      riskyColor = Color3.fromRGB(255, 89, 89),
+      libColor = Color3.fromRGB(189, 172, 255),
+      riskyColor = Color3.fromRGB(255, 0, 0),
       FontColor = Color3.fromRGB(255, 255, 255),
       MainColor = Color3.fromRGB(14, 14, 14),
-      AccentColor = Color3.fromRGB(171, 255, 182),
+      AccentColor = Color3.fromRGB(189, 172, 255),
       OutlineColor = Color3.fromRGB(15, 15, 15),
    },
    Enabled = true,
@@ -116,28 +116,29 @@ local keynames = {
    [Enum.UserInputType.MouseButton2] = '[MB2]',
    [Enum.UserInputType.MouseButton3] = '[MB3]'
 }
+local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end)
 local ScreenGui = Instance.new('ScreenGui')
 ProtectGui(ScreenGui)
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "boomcaca_menu"
+ScreenGui.Name = "velocity_menu"
 menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       'b', 'bo', 'boo', 'boom', 'boomc', 'boomca', 'boomcac', 'boomcaca.', 'boomcaca.<font color="rgb(0, 201, 37)">w</font>',
-       'boomcaca.<font color="rgb(0, 201, 37)">wt</font>', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font>',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> |', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | u',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | un', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | uni',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | univ', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | univers',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | universa', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | universal',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | universa', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | univers',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | univer', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | unive',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | univ', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | uni',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | un', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> | u',
-       'boomcaca.<font color="rgb(0, 201, 37)">wtf</font> |', 'boomcaca.<font color="rgb(0, 201, 37)">wtf</font>',
-       'boomcaca.<font color="rgb(0, 201, 37)">wt</font>', 'boomcaca.<font color="rgb(0, 201, 37)">w</font>',
-       'boomcaca.', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b'
+       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
+       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universal',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univer', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | unive',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
+       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
+       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
+       'eclipse.', 'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
    }
    while wait(0.5) do
        if library.AnimatedText then
@@ -146,7 +147,7 @@ task.spawn(function()
                wait(0.5)
            end 
        else
-           menu.bg.pre.Text = 'boomcaca | <font color="rgb(0, 201, 37)">universal</font>'
+           menu.bg.pre.Text = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>'
        end
    end
 end)  
@@ -182,7 +183,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
             library:Create('UIListLayout', {Padding = UDim.new(0, 4);FillDirection = Enum.FillDirection.Vertical;SortOrder = Enum.SortOrder.LayoutOrder;Parent = library.NotificationArea});
             function library:Notify(Text, Time)
                local XSize, YSize = library:GetTextBounds(Text, Enum.Font.Code, 14);YSize = YSize + 7
-               local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(0, 201, 37);Position = UDim2.new(0, 100, 0, 10);Size = UDim2.new(0, 0, 0, YSize);ClipsDescendants = true;Transparency = 0,ZIndex = 100;Parent = library.NotificationArea});
+               local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(189, 172, 255);Position = UDim2.new(0, 100, 0, 10);Size = UDim2.new(0, 0, 0, YSize);ClipsDescendants = true;Transparency = 0,ZIndex = 100;Parent = library.NotificationArea});
                library:Create('UIGradient', {Color = ColorSequence.new{ColorSequenceKeypoint.new(0, library.Colors.MainColor), ColorSequenceKeypoint.new(0.1, library.Colors.MainColor), ColorSequenceKeypoint.new(0.6, library.Colors.MainColor), ColorSequenceKeypoint.new(1, library.Colors.MainColor)},Rotation = -120;Parent = NotifyOuter});
                local NotifyInner = library:Create('Frame', {BackgroundColor3 = library.Colors.MainColor;BorderColor3 = library.Colors.OutlineColor;BorderMode = Enum.BorderMode.Inset;Size = UDim2.new(1, 0, 1, 0);ZIndex = 101;Parent = NotifyOuter});
                local InnerFrame = library:Create('Frame', {BackgroundColor3 = Color3.new(1, 1, 1);BorderSizePixel = 0;Position = UDim2.new(0, 1, 0, 1);Size = UDim2.new(1, -2, 1, -2);ZIndex = 102;Parent = NotifyInner;});
@@ -237,8 +238,8 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                            for i,v in next, library.tabbuttons do
                               local state = v == newButton
                               local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-                              local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(0, 201, 37)})
-                              local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(0, 201, 37)})
+                              local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(189, 172, 255)})
+                              local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(189, 172, 255)})
                               local imageTweenEnd = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(0,0,0)})
                               local textTweenEnd = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(125, 125, 125)})
                               if state then
@@ -1882,7 +1883,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                                  if v == x then return true end
                                  end return false end
                                  function library:createConfig()
-                                    makefolder("boomcaca.kys")
+                                    makefolder("eclipse.wtf")
                                     local name = library.flags["config_name"]
                                     if contains(library.options["config_box"].values, name) then return library:Notify(name..".cfg already exists!", 5) end
                                     if name == "" then return library:Notify("You need to put a name in!", 5) end
@@ -1894,13 +1895,13 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                                     else jig[i] = v
                                     end
                                  end
-                                 writefile("boomcaca.kys/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
+                                 writefile("eclipse.wtf/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
                                  library:Notify("Succesfully created config "..name..".cfg!", 5)
                                  library:refreshConfigs()
                               end
 
                               function library:saveConfig()
-                                 makefolder("boomcaca.kys")
+                                 makefolder("eclipse.wtf")
                                  local name = library.flags["config_box"]
                                  local jig = {}
                                  for i,v in next, library.flags do
@@ -1950,7 +1951,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
 
                                  function library:refreshConfigs()
                                     local tbl = {}
-                                    for i,v in next, listfiles("boomcaca.kys") do table.insert(tbl,v) end
+                                    for i,v in next, listfiles("eclipse.wtf") do table.insert(tbl,v) end
                                     library.options["config_box"].refresh(tbl)
                                  end
                               end)()
