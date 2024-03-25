@@ -140,11 +140,11 @@ task.spawn(function()
        'boomcaca.<font color="rgb(62, 230, 107)">wt</font>', 'boomcaca.<font color="rgb(62, 230, 107)">w</font>',
        'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo', 'b',' '
    }
-   while wait(0.05) do
+   while wait(0.1) do
        if library.AnimatedText then
            for i = 1, #textList do
                menu.bg.pre.Text = textList[i]
-               wait(0.05)
+               wait(0.1)
            end 
        else
            menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(62, 230, 107)">fallen</font>'
