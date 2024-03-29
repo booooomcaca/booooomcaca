@@ -36,8 +36,8 @@ repeat
    task.wait()
 until game:IsLoaded()
 
-if not isfile("eclipse.wtf") then
-   makefolder("eclipse.wtf")
+if not isfile("boomcaca.kys") then
+   makefolder("boomcaca.kys")
 end
 
 ---// Variables
@@ -61,20 +61,20 @@ if not LPH_OBFUSCATED then
 end
 
 -- Menu/UI Creation
-local menu = game:GetObjects("rbxassetid://16922335711")[1] 
+local menu = game:GetObjects("rbxassetid://16922410215")[1] 
 local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group
 local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
 
 local library = {
-   Title = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>',
-   AnimatedText = false,
+   Title = 'boomcaca.kys | <font color="rgb(189, 172, 255)">game</font>',
+   AnimatedText = true,
    keybind = Enum.KeyCode.End,
    Colors = {
-      libColor = Color3.fromRGB(189, 172, 255),
-      riskyColor = Color3.fromRGB(255, 0, 0),
+      libColor = Color3.fromRGB(0, 255, 81),
+      riskyColor = Color3.fromRGB(255, 30, 30),
       FontColor = Color3.fromRGB(255, 255, 255),
       MainColor = Color3.fromRGB(14, 14, 14),
-      AccentColor = Color3.fromRGB(189, 172, 255),
+      AccentColor = Color3.fromRGB(0, 255, 81),
       OutlineColor = Color3.fromRGB(15, 15, 15),
    },
    Enabled = true,
@@ -126,19 +126,19 @@ menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universal',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univer', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | unive',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
-       'eclipse.', 'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
+       '','b', 'bo', 'boo', 'boom', 'boomc', 'boomcac', 'boomcaca', 'boomcaca.', 'boomcaca.<font color="rgb(189, 172, 255)">k</font>',
+       'boomcaca.<font color="rgb(189, 172, 255)">ky</font>', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font>',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> |', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | u',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | un', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | uni',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | univ', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | univers',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | universa', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | universal',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | universa', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | univers',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | univer', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | unive',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | univ', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | uni',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | un', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font> | u',
+       'boomcaca.<font color="rgb(189, 172, 255)">kys</font> |', 'boomcaca.<font color="rgb(189, 172, 255)">kys</font>',
+       'boomcaca.<font color="rgb(189, 172, 255)">wt</font>', 'boomcaca.<font color="rgb(189, 172, 255)">k</font>',
+       'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo','b'
    }
    while wait(0.5) do
        if library.AnimatedText then
@@ -147,7 +147,7 @@ task.spawn(function()
                wait(0.5)
            end 
        else
-           menu.bg.pre.Text = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>'
+           menu.bg.pre.Text = 'boomcaca.kys | <font color="rgb(189, 172, 255)">idk</font>'
        end
    end
 end)  
@@ -1883,7 +1883,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                                  if v == x then return true end
                                  end return false end
                                  function library:createConfig()
-                                    makefolder("eclipse.wtf")
+                                    makefolder("boomcaca.kys")
                                     local name = library.flags["config_name"]
                                     if contains(library.options["config_box"].values, name) then return library:Notify(name..".cfg already exists!", 5) end
                                     if name == "" then return library:Notify("You need to put a name in!", 5) end
@@ -1895,13 +1895,13 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                                     else jig[i] = v
                                     end
                                  end
-                                 writefile("eclipse.wtf/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
+                                 writefile("boomcaca.kys/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
                                  library:Notify("Succesfully created config "..name..".cfg!", 5)
                                  library:refreshConfigs()
                               end
 
                               function library:saveConfig()
-                                 makefolder("eclipse.wtf")
+                                 makefolder("boomcaca.kys")
                                  local name = library.flags["config_box"]
                                  local jig = {}
                                  for i,v in next, library.flags do
@@ -1951,7 +1951,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
 
                                  function library:refreshConfigs()
                                     local tbl = {}
-                                    for i,v in next, listfiles("eclipse.wtf") do table.insert(tbl,v) end
+                                    for i,v in next, listfiles("boomcaca.kys") do table.insert(tbl,v) end
                                     library.options["config_box"].refresh(tbl)
                                  end
                               end)()
