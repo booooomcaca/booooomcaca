@@ -121,7 +121,7 @@ local ScreenGui = Instance.new('ScreenGui')
 ProtectGui(ScreenGui)
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "boomcaca_menu"
+ScreenGui.Name = "coolassfuckinmenu"
 menu.bg.pre.Text = ""
 
 task.spawn(function()
@@ -137,7 +137,7 @@ task.spawn(function()
        'boomcaca.<font color="rgb(0, 255, 81)">kys</font> | univ', 'boomcaca.<font color="rgb(0, 255, 81)">kys</font> | uni',
        'boomcaca.<font color="rgb(0, 255, 81)">kys</font> | un', 'boomcaca.<font color="rgb(0, 255, 81)">kys</font> | u',
        'boomcaca.<font color="rgb(0, 255, 81)">kys</font> |', 'boomcaca.<font color="rgb(0, 255, 81)">kys</font>',
-       'boomcaca.<font color="rgb(0, 255, 81)">wt</font>', 'boomcaca.<font color="rgb(0, 255, 81)">k</font>',
+       'boomcaca.<font color="rgb(0, 255, 81)">ky</font>', 'boomcaca.<font color="rgb(0, 255, 81)">k</font>',
        'boomcaca.', 'boomcaca', 'boomcac', 'boomca', 'boomc', 'boom', 'boo', 'bo','b'
    }
    while wait(0.5) do
