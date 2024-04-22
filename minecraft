@@ -12,14 +12,7 @@ local function create(a, b)
 end
 
 function FluxLib:NewGui(GuiProperties)
-    local GothamSSm = "https://forum.elysium.wtf/uploads/default/original/2X/b/b59cc03a78884ea608624fecbf919ed032c8fd3d.ttf"
-    local GothamSSm_Medium = "https://forum.elysium.wtf/uploads/default/original/2X/1/1112beb22b9344db1ff5f72791e6772e9f4b0b84.ttf"
-    local Poppins_SemiBold = "https://forum.elysium.wtf/uploads/default/original/2X/1/11cab7bae700c3ab30edf4ba5367d6dc808b1787.ttf"
-    local Outfit_Bold = "https://forum.elysium.wtf/uploads/default/original/2X/4/4d7991b68c5b84c852824697b6ced99c691a0c18.ttf"
-    local Outfit_SemiBold = "https://forum.elysium.wtf/uploads/default/original/2X/1/11cab7bae700c3ab30edf4ba5367d6dc808b1787.ttf"
-    local Outfit_Black = "https://forum.elysium.wtf/uploads/default/original/2X/d/db01f8b70a55a08418f146114a7a9f503a8608e4.ttf"
-    local Outfit_Medium = "https://forum.elysium.wtf/uploads/default/original/2X/1/1112beb22b9344db1ff5f72791e6772e9f4b0b84.ttf"
-    local Outfit = "https://forum.elysium.wtf/uploads/default/original/2X/b/b59cc03a78884ea608624fecbf919ed032c8fd3d.ttf"
+    local ArialFont = Enum.Font.Arial
 
     local Gui = {}
     local GuiTabs = {}
@@ -34,7 +27,7 @@ function FluxLib:NewGui(GuiProperties)
         local ItemButton = create("TextButton", {
             Parent = ItemHolder,
             Size = UDim2.new(0, 215, 0, 40),
-            Font = Outfit_SemiBold,
+            Font = ArialFont,
             BorderSizePixel = 0,
             BackgroundColor3 = Color3.fromHex("#12121e"),
             CornerRadius = CornerRadius.new(6, 6, 6, 6),
@@ -51,14 +44,14 @@ function FluxLib:NewGui(GuiProperties)
             Position = UDim2.new(0, 22, 0.5, -5),
             Text = text,
             TextColor3 = Color3.fromHex("#ddddf0"),
-            Font = Outfit_Medium,
+            Font = ArialFont,
             TextSize = 16
         })
 
         local Description = create("TextLabel", {
             Parent = ItemButton,
             Text = description,
-            Font = Outfit,
+            Font = ArialFont,
             TextSize = 16,
             TextColor3 = Color3.fromHex("#27273b"),
             Position = UDim2.new(0, 9, 0, 24),
@@ -68,15 +61,6 @@ function FluxLib:NewGui(GuiProperties)
         ItemButtonTitle.Parent = ItemButton
         ItemHolder.Parent = ItemContainer
         return ItemButton, Circle, ItemButtonTitle, ItemHolder
-    end
-
-    local function GuiTabs_GetTableIndex(ItemContainer)
-        for i = 1, #GuiTabs do
-            local GuiTab = GuiTabs[i]
-            if GuiTab.ItemContainer == ItemContainer then
-                return GuiTab
-            end
-        end
     end
 
     local SizeX = GuiProperties.SizeX or 370
@@ -106,7 +90,7 @@ function FluxLib:NewGui(GuiProperties)
         Parent = Main,
         BackgroundTransparency = 1,
         Size = UDim2.new(1, 0, 0, 30),
-        Font = Outfit_Bold,
+        Font = ArialFont,
         Text = TitleText,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextSize = 20,
@@ -118,7 +102,7 @@ function FluxLib:NewGui(GuiProperties)
         Parent = Main,
         BackgroundTransparency = 1,
         Size = UDim2.new(1, 0, 0, 20),
-        Font = Outfit_Medium,
+        Font = ArialFont,
         Text = DescText,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextSize = 16,
@@ -129,7 +113,7 @@ function FluxLib:NewGui(GuiProperties)
     local Close = create("TextButton", {
         Parent = Main,
         Size = UDim2.new(0, 20, 0, 20),
-        Font = Outfit_Black,
+        Font = ArialFont,
         Text = "X",
         TextColor3 = Color3.fromRGB(255, 255, 255),
         BackgroundColor3 = Color3.fromRGB(38, 38, 43),
@@ -171,7 +155,7 @@ function FluxLib:NewGui(GuiProperties)
             Parent = GuiTabs_GetTableIndex(Main).ItemContainer or Main,
             BackgroundTransparency = 1,
             Size = UDim2.new(1, 0, 1, 0),
-            Font = GothamSSm_Medium,
+            Font = ArialFont,
             Text = text,
             TextColor3 = Color3.fromRGB(255, 255, 255),
             TextSize = 20,
@@ -299,7 +283,7 @@ function FluxLib:NewGui(GuiProperties)
             Size = UDim2.new(0, 30, 0, 30),
             Position = UDim2.new(1, -40, 0, 5),
             Text = "",
-            Font = Outfit_Black,
+            Font = ArialFont,
             TextSize = 18,
             TextColor3 = Color3.fromRGB(255, 255, 255),
         })
